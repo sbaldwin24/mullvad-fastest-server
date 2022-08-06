@@ -1,7 +1,7 @@
 package serversAll
 
 var serversAll = []string {
-	"ae-dxb-001",
+  "ae-dxb-001",
   "al-tia-001",
   "at4-wireguard",
   "at5-wireguard",
@@ -875,5 +875,5 @@ var serversAll = []string {
 }
 
 func GetServers() []string {
-	return serversAll
+  return serversAll
 }
