@@ -871,7 +871,7 @@ var servers = []string {
   "us-slc-104",
   "us-slc-105",
   "us-slc-106",
-  "us-slc-br-101"
+  "us-slc-br-101",
 }
 
 func GetServers() []string {
