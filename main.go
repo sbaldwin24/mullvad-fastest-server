@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 	"time"
-  "github.com/sbaldwin24/mullvad-fastest-server/servers/servers-usa"
 
+	mullvadservers "github.com/sbaldwin24/mullvad-fastest-server/mullvadservers"
 	ping "github.com/sparrc/go-ping"
 )
 
@@ -16,7 +16,7 @@ var mullvadAddr = ".mullvad.net"
 var results = map[string]int64{}
 
 func main() {
-	for _, server := range serversUSA.GetServers() {
+	for _, server := range mullvadservers.GetServers() {
 		pinger, err := ping.NewPinger(server)
 		if err != nil {
 			panic(err)

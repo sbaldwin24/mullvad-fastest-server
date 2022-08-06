@@ -1,7 +1,3 @@
-module github.com/sbaldwin24/mullvad-fastest-server/servers
+module mullvadservers
 
-go 1.19
-
-require (
-	golang.org/x/fmt v0.0.0-20150411045040-2a5d6d7d2995
-)
+go 1.18
